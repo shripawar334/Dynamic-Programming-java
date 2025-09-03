@@ -7,7 +7,7 @@ public class Classroom{
     }
     static int fibo_dp(int n,int[]arr){  // this is called memoization
         if(n==0 || n==1){
-            return n;
+            return n;                   //memoization=using recursion and storing the                           solutions of subproblems
         }
         if(arr[n]!=0){
             return arr[n];
@@ -18,7 +18,7 @@ public class Classroom{
     static int fibo_tabulation(int n,int[]arr){
         arr[0]=0;
         arr[1]=1;
-        int m=arr.length;
+        int m=arr.length;                   //tabulation=without recursion we are                                   solving the problem
         for(int i=2;i<m;i++){
             arr[i]=arr[i-1]+arr[i-2];
         }
